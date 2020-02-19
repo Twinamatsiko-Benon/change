@@ -21,6 +21,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
 
     }
     public void onClose(View view) {
+
         super.finish(); // finishes current Activity }
     }
 
