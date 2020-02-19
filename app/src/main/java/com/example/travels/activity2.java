@@ -26,7 +26,7 @@ Button btn;
                 String text="";
                 try{
 
-                    InputStream in=getAssets().open("benon.txt");
+                    InputStream in=getAssets().open("prog.c");
                     int size=in.available();
                     byte[] buffer=new byte[size];
                     in.read(buffer);
