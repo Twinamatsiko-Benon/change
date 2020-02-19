@@ -26,11 +26,11 @@ Button btn;
                 String text="";
                 try{
 
-                    InputStream in=getAssets().open("prog.c");
-                    int size=in.available();
+                    InputStream input=getAssets().open("prog.c");
+                    int size=input.available();
                     byte[] buffer=new byte[size];
-                    in.read(buffer);
-                    in.close();
+                    input.read(buffer);
+                    input.close();
                     text=new String(buffer);
                    /* AssetManager assetManager = getAssets();
                     String[] files = assetManager.list("");
@@ -41,7 +41,7 @@ Button btn;
                     ex.printStackTrace();
 
                 }
-                textView.setText(text);
+                textView.setText((CharSequence) text);
             }
         });
     }
